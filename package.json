@@ -1,6 +1,6 @@
 {
   "name": "central-cities",
-  "version": "0.0.0-development",
+  "version": "1.1.0",
   "description": "NPM package to get the capital of the countries",
   "main": "index.js",
   "scripts": {
