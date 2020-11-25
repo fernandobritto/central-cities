@@ -30,3 +30,40 @@ yarn add central-cities
 ```
 
 
+## How to use
+
+#### Importing with Commonjs style
+
+```javascript
+const Countries = require('central-cities')
+const countries = new Countries()
+```
+
+#### Importing with ES6 modules style
+
+```javascript
+import Countries from 'central-cities'
+const countries = new Countries()
+```
+
+#### Filter by name
+
+```javascript
+
+const portugal = countries.byName('portugal')
+
+/**
+ * Get all country data
+ [{
+    "country": "Portugal",
+    "city": "Lisboa",
+    "independence": "1143",
+    "location": "Southern Europe"
+ }]
+*/
+portugal.toJson()
+
+// get capital
+portugal.capital // Lisboa
+
+```
