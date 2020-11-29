@@ -67,3 +67,14 @@ portugal.toJson()
 portugal.capital // Lisboa
 
 ```
+
+#### TypeScript is supported
+
+```javascript
+import Countries from 'central-cities'
+const countries = new Countries()
+
+countries.locations() // return type: array of strings
+const portugal = countries.byName('portugal') // return type: Countries class
+portugal.capital // return type: string ("Lisboa")
+```
